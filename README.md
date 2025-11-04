@@ -1,1 +1,1 @@
-# Use AI to generate usable test cases and then driven testing
+# Use AI to generate usable test cases and then drive testing
