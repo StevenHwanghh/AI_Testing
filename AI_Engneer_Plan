@@ -1,0 +1,181 @@
+# 🧭 AI Engineer 半年学习与实战计划（6 个月 / 24 周）
+
+> 🎯 目标：从 AI 自动化专家 → AI Engineer / AI Application Developer  
+> 结合 Watsonx.ai + LangChain + LangGraph + MCP + Playwright，实现可部署的 AI 应用与自动化智能体。  
+> 作者：Steven Huang  
+> 更新时间：2025 年 11 月  
+
+---
+
+## 📅 总览阶段
+
+| 阶段 | 时间 | 目标 |
+|------|------|------|
+| 🧩 阶段一 | 第 1–4 周 | 掌握 LLM 与 LangChain 基础，熟悉 Watsonx.ai |
+| ⚙️ 阶段二 | 第 5–8 周 | 构建 AI Agent + LangGraph + 自动化测试集成 |
+| 🌐 阶段三 | 第 9–12 周 | 将 Agent 转化为可部署 Web 应用 |
+| 🧠 阶段四 | 第 13–18 周 | 掌握 RAG、向量化、微调与治理 |
+| 🚀 阶段五 | 第 19–24 周 | 整理作品集、强化简历、发布 Demo |
+
+---
+
+## 🧩 阶段一：AI 应用基础与环境建设（第 1–4 周）
+**目标：熟悉 LLM、LangChain、Watsonx.ai 基础，完成第一个 AI 应用**
+
+- [ ] 第 1 周：环境搭建与基础概念  
+  - [ ] 安装 `uv` 与虚拟环境  
+  - [ ] 设置 OpenAI / Watsonx.ai API Key  
+  - [ ] 运行第一个 LLM 脚本（prompt → response）
+
+- [ ] 第 2 周：LangChain 基础  
+  - [ ] 学习 `ChatPromptTemplate`, `Runnable`, `Chain`  
+  - [ ] 使用 OpenAI 与 WatsonxLLM  
+  - [ ] 实现简易问答机器人 + README 说明
+
+- [ ] 第 3 周：Prompt Engineering  
+  - [ ] 学习 Few-shot / System Prompt  
+  - [ ] 设计不同角色提示词  
+  - [ ] 建立 `prompt-library.md` 管理版本
+
+- [ ] 第 4 周：Watsonx.ai Notebook 实践  
+  - [ ] 使用 AutoAI / Synthetic Data 生成  
+  - [ ] 训练与部署模型  
+  - [ ] 与 LangChain 集成调用模型
+
+---
+
+## ⚙️ 阶段二：LangGraph + Agent + 自动化集成（第 5–8 周）
+**目标：实现 AI Agent，整合 MCP / Playwright 自动化**
+
+- [ ] 第 5 周：LangGraph 入门  
+  - [ ] 理解 Node / Edge / State  
+  - [ ] 构建一个有记忆的对话流图  
+  - [ ] 保存状态与日志
+
+- [ ] 第 6 周：Tool / Function Calling  
+  - [ ] 注册自定义 Python 工具  
+  - [ ] LangChain 工具调用机制  
+  - [ ] Watsonx Function Calling 测试
+
+- [ ] 第 7 周：AI + 自动化测试  
+  - [ ] 读取测试文件（Markdown）  
+  - [ ] 用 Playwright MCP 执行网页操作  
+  - [ ] 失败截图 + 报告生成
+
+- [ ] 第 8 周：多 Agent 协作  
+  - [ ] Manager / Worker 架构  
+  - [ ] 使用 LangGraph 设计多 Agent 流程  
+  - [ ] 输出任务日志与状态报告
+
+---
+
+## 🌐 阶段三：AI 应用开发与部署（第 9–12 周）
+**目标：将 Agent 系统转为完整可部署 Web 应用**
+
+- [ ] 第 9 周：后端开发（FastAPI）  
+  - [ ] 构建 RESTful API  
+  - [ ] 通过 HTTP 调用模型  
+  - [ ] 返回 JSON / 流式响应
+
+- [ ] 第 10 周：前端展示（Streamlit / Gradio）  
+  - [ ] 创建交互式界面  
+  - [ ] 输入 Prompt → 输出结果  
+  - [ ] 实现文件上传 / 下载
+
+- [ ] 第 11 周：Docker 化与 CI/CD  
+  - [ ] 创建 Dockerfile  
+  - [ ] Jenkins / GitHub Actions 部署  
+  - [ ] IBM Cloud 或本地容器部署
+
+- [ ] 第 12 周：配置与版本管理  
+  - [ ] .env 管理密钥  
+  - [ ] Prompt / Config 版本控制  
+  - [ ] 输出部署文档与架构图
+
+---
+
+## 🧠 阶段四：AI 工程能力提升（第 13–18 周）
+**目标：掌握 RAG、微调、治理与性能优化**
+
+- [ ] 第 13 周：RAG 检索增强生成  
+  - [ ] 使用 Embedding 模型（WatsonxEmbeddings / FAISS）  
+  - [ ] 构建文档问答系统  
+  - [ ] 添加上下文记忆功能
+
+- [ ] 第 14 周：知识库与缓存优化  
+  - [ ] 自建内部知识库  
+  - [ ] LangChain Cache 实践  
+  - [ ] 提升响应速度
+
+- [ ] 第 15 周：微调与模型管理  
+  - [ ] 了解 Fine-tuning 原理  
+  - [ ] 使用 Watsonx.ai 进行微调  
+  - [ ] 模型评估与导出
+
+- [ ] 第 16 周：多模态输入  
+  - [ ] 学习 Vision-Language 模型  
+  - [ ] 让 Agent 理解图像 / 截图内容  
+  - [ ] 测试截图分析功能
+
+- [ ] 第 17 周：Watsonx.Gov 治理  
+  - [ ] 模型追踪与版本记录  
+  - [ ] 偏差检测与合规评估  
+  - [ ] 输出治理报告
+
+- [ ] 第 18 周：性能与安全优化  
+  - [ ] 控制 Token 成本  
+  - [ ] 异步并发执行  
+  - [ ] API 安全与访问限制
+
+---
+
+## 🚀 阶段五：成果整合与职业转型（第 19–24 周）
+**目标：整理作品、强化简历、展示成果，转向 AI Engineer 职业方向**
+
+- [ ] 第 19–20 周：整理作品与文档  
+  - [ ] 选择 2~3 个项目加入 Portfolio  
+  - [ ] 每个项目配架构图与说明  
+  - [ ] 编写 `README` 与 Demo 视频脚本
+
+- [ ] 第 21–22 周：简历与 LinkedIn 升级  
+  - [ ] 添加新头衔：AI Engineer / AI Application Developer  
+  - [ ] 强调 AI + Automation 实践成果  
+  - [ ] 上传 GitHub / 发布 LinkedIn Showcase
+
+- [ ] 第 23 周：内部分享或外部展示  
+  - [ ] 30min 演示你的 AI 自动测试系统  
+  - [ ] 发布技术文章或短视频  
+  - [ ] 收集反馈与改进
+
+- [ ] 第 24 周：未来规划与持续学习  
+  - [ ] 明确下一步方向（AI Architect / Expert Labs）  
+  - [ ] 订阅 LangChain / IBM / Hugging Face 更新  
+  - [ ] 制定下半年学习目标
+
+---
+
+## 📚 推荐资源
+- [LangChain 文档](https://python.langchain.com)
+- [LangGraph 官方教程](https://langchain-ai.github.io/langgraph/)
+- [IBM Watsonx.ai 文档](https://dataplatform.cloud.ibm.com/docs)
+- [FastAPI 指南](https://fastapi.tiangolo.com/)
+- [Streamlit 文档](https://docs.streamlit.io/)
+- [Hugging Face Model Hub](https://huggingface.co/models)
+
+---
+
+## 🏁 半年目标成果清单
+
+| 成果 | 描述 |
+|------|------|
+| 🤖 AI 自动化测试 Agent | LangGraph + Playwright MCP + Watsonx.ai 实现网页自动执行 |
+| 💬 文档问答系统 (RAG Bot) | LangChain + Watsonx.data + Granite 模型 |
+| 🌐 Web Demo | FastAPI + Streamlit + Docker 部署 |
+| 📜 简历与 LinkedIn | 更新为 “AI Engineer” 方向 |
+| 🎥 展示视频 | 30min 项目演示（可用于内部/面试展示） |
+
+---
+
+> 💡 **建议**：每周记录一篇 “学习日志（Learning Log）”，总结本周学习内容与心得。  
+> 半年后，你不仅能展示技术能力，还能展示持续学习与思考深度 —— 这正是优秀 AI Engineer 的标志。
+
